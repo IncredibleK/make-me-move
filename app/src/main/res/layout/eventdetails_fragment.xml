@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_eventheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Headerbg"
+            android:text="@string/event"
+            android:textAlignment="center"
+            android:textColor="@color/Headertext"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_detailchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/background"
+                android:text="@string/details"
+                android:textColor="@color/Headertext" />
+
+            <Button
+                android:id="@+id/bt_teamchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/background"
+                android:text="@string/teams"
+                android:textColor="@color/Headertext" />
+
+            <Button
+                android:id="@+id/bt_resultchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/background"
+                android:text="@string/result"
+                android:textColor="@color/Headertext" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/eventdetailscontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

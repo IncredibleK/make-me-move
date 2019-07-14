@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#212121</color>
+    <color name="Headertext">#41841f</color>
+    <color name="Headerbg">#282828</color>
+    <color name="Normaltextbg">#303030</color>
+    <color name="NormaltextColor">#e8e8e8</color>
+    <color name="AlertDialaogbg">#54585e</color>
+</resources>

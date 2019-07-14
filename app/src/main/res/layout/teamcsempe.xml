@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/Headerbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Headerbg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Headerbg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_teamnameset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:background="@color/Headerbg"
+                android:text="Teamname"
+                android:textColor="@color/Headertext"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_join"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/greenbuttonshape"
+                android:text="@string/join"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bt_leave"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.6"
+                android:background="@android:color/holo_red_dark"
+                android:text="@string/leave"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Headerbg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_membersheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Headerbg"
+                android:text="@string/members"
+                android:textColor="@color/Headertext"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_teammemberrecyler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Headerbg"
+                android:tag="teammemberrv"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
